@@ -1,12 +1,58 @@
-# React + Vite
+🧵 CraftNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Cozy & Minimal Handmade Products Website
 
-Currently, two official plugins are available:
+📌 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+CraftNest is a modern, responsive web application designed to showcase and promote handmade and artistic products in a clean, cozy, and user-friendly interface.
 
-## Expanding the ESLint configuration
+The platform focuses on aesthetic presentation, smooth navigation, and structured product display — making it ideal for small businesses and independent creators.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Features
+
+🛍️ Beautiful product showcase layout
+
+🔎 Organized product sections
+
+📱 Fully responsive design (Mobile + Desktop)
+
+🎨 Minimal and cozy UI design
+
+⚡ Fast-loading static pages
+
+📸 Custom images and branding support
+
+📂 Structured component-based architecture
+
+🛠️ Tech Stack
+
+Frontend
+
+HTML5
+
+CSS3
+
+JavaScript
+
+React.js
+
+Tools
+
+VS Code
+
+Git & GitHub
+
+🧩 Project Structure
+CraftNest/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   └── App.js
+│
+└── package.json
+
+
+The project follows a clean and modular structure for scalability and maintainability.
