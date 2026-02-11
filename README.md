@@ -1,14 +1,14 @@
-🧵 CraftNest
+#🧵 CraftNest
 
 A Cozy & Minimal Handmade Products Website
 
-📌 Overview
+##📌 Overview
 
 CraftNest is a modern, responsive web application designed to showcase and promote handmade and artistic products in a clean, cozy, and user-friendly interface.
 
 The platform focuses on aesthetic presentation, smooth navigation, and structured product display — making it ideal for small businesses and independent creators.
 
-🚀 Features
+##🚀 Features
 
 🛍️ Beautiful product showcase layout
 
@@ -24,7 +24,7 @@ The platform focuses on aesthetic presentation, smooth navigation, and structure
 
 📂 Structured component-based architecture
 
-🛠️ Tech Stack
+##🛠️ Tech Stack
 
 Frontend
 
@@ -42,7 +42,7 @@ VS Code
 
 Git & GitHub
 
-🧩 Project Structure
+##🧩 Project Structure
 CraftNest/
 │
 ├── public/
