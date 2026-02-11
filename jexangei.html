@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanRoots - Plant Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-green: #1ab75e;
+            --light-green: #dff5e3;
+            --brown: #6b2d00;
+        }
+
+        body {
+            background-color: var(--light-green);
+            color: #333;
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: var(--brown);
+        }
+
+        .footer {
+            background-color: var(--brown);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-light-green font-sans antialiased">
+    <!-- Header -->
+    <header class="fixed top-0 w-full navbar shadow-lg z-50 transition-shadow duration-300">
+        <nav class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold text-white tracking-tight hover:text-gray-300 transition-colors duration-200">🌿 UrbanRoots</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-white text-lg font-medium hover:text-gray-300 transition-colors duration-200">🏠 Home</a>
+                <a href="login.php" class="text-white text-lg font-medium hover:text-gray-300 transition-colors duration-200">🔐 Login</a>
+                <a href="register.php" class="text-white text-lg font-medium hover:text-gray-300 transition-colors duration-200">✍️ Register</a>
+                <a href="about.html" class="text-white text-lg font-medium hover:text-gray-300 transition-colors duration-200">ℹ️ About</a>
+                <a href="contact.php" class="text-white text-lg font-medium hover:text-gray-300 transition-colors duration-200">📞 Contact</a>
+            </div>
+            <!-- Hamburger Icon -->
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none hover:text-gray-300 transition-colors duration-200" aria-expanded="false">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path class="line-top" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 8h16"></path>
+                    <path class="line-middle" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 12h16"></path>
+                    <path class="line-bottom" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden navbar shadow-lg">
+            <div class="flex flex-col items-start py-6 px-6 space-y-5">
+                <a href="index.html" class="text-white text-lg font-medium hover:text-gray-300 transition-colors duration-200">🏠 Home</a>
+                <a href="login.php" class="text-white text-lg font-medium hover:text-gray-300 transition-colors duration-200">🔐 Login</a>
+                <a href="register.php" class="text-white text-lg font-medium hover:text-gray-300 transition-colors duration-200">✍️ Register</a>
+                <a href="about.html" class="text-white text-lg font-medium hover:text-gray-300 transition-colors duration-200">ℹ️ About</a>
+                <a href="contact.php" class="text-white text-lg font-medium hover:text-gray-300 transition-colors duration-200">📞 Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-green-100 pt-28 pb-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-6xl font-black text-gray-800 mb-5 tracking-tight">Welcome to UrbanRoots 🌱</h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">Join our growing community of urban gardeners. Learn, grow, and connect with nature-loving people!</p>
+            <a href="register.php" class="inline-block bg-green-600 text-white px-8 py-4 text-lg font-semibold rounded-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-6 tracking-tight">About UrbanRoots 🌳</h2>
+            <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">UrbanRoots empowers city residents to grow plants in small spaces, provides expert gardening guidance, and fosters a vibrant community of plant lovers through forums, events, and more.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-green-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-extrabold text-gray-800 text-center mb-10 tracking-tight">Platform Features</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all duration-300">
+                    <span class="text-4xl mb-4 text-green-600">🌿</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Plant Care</h3>
+                    <p class="text-gray-600 leading-relaxed">Track your plant’s growth, watering schedules, and overall health over time.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all duration-300">
+                    <span class="text-4xl mb-4 text-green-600">🌱</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Community</h3>
+                    <p class="text-gray-600 leading-relaxed">Join discussions, connect with other plant lovers, and share your green journey.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all duration-300">
+                    <span class="text-4xl mb-4 text-green-600">❓</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Q&A</h3>
+                    <p class="text-gray-600 leading-relaxed">Ask plant-related questions and get helpful answers from experts and fellow users.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all duration-300">
+                    <span class="text-4xl mb-4 text-green-600">📝</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Blog</h3>
+                    <p class="text-gray-600 leading-relaxed">Read insightful articles about urban gardening, sustainability, and plant trends.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all duration-300">
+                    <span class="text-4xl mb-4 text-green-600">🔨</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">DIY</h3>
+                    <p class="text-gray-600 leading-relaxed">Discover creative do-it-yourself ideas to reuse and recycle for your plant setups.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all duration-300">
+                    <span class="text-4xl mb-4 text-green-600">🛒</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Marketplace</h3>
+                    <p class="text-gray-600 leading-relaxed">Buy or sell plants, seeds, pots, and tools from and to local plant lovers.</p>
+                </div>
+                <!-- Feature 7 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all duration-300">
+                    <span class="text-4xl mb-4 text-green-600">📅</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Calendar</h3>
+                    <p class="text-gray-600 leading-relaxed">Set reminders for watering, fertilizing, and track upcoming planting events.</p>
+                </div>
+                <!-- Feature 8 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all duration-300">
+                    <span class="text-4xl mb-4 text-green-600">📖</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Plant Guide</h3>
+                    <p class="text-gray-600 leading-relaxed">Access a growing library of plants with care tips, light needs, and maintenance info.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-5 tracking-tight">Ready to Grow Together? 🌱</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">Become a part of the UrbanRoots family and start your plant journey today!</p>
+            <a href="register.php" class="inline-block bg-green-600 text-white px-8 py-4 text-lg font-semibold rounded-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 footer text-center">
+        <p class="text-white text-lg">Made with ❤️ by <a href="https://www.linkedin.com/in/jexan-joel-139993293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-white font-medium">Jexan Joel</a></p>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

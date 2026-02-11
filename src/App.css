@@ -1,0 +1,120 @@
+/* Reset default margin & box model standardization */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root element center alignment (unless using Tailwind) */
+#root {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #faf9f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Reusable container */
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 1rem;
+}
+
+/* Logo effect optional (animated and glowing) */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 0.3s ease;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 10px #a48adb);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 10px #61dafb);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.spin {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card-style sections */
+.card {
+  background-color: white;
+  padding: 2em;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: #7c3aed;
+}
+a:hover {
+  color: #5b21b6;
+}
+
+/* Utility class */
+.read-the-docs {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  display: block;
+}
+
+/* Typography Helpers */
+h1, h2, h3 {
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #5b21b6;
+}
+h2 {
+  font-size: 2rem;
+  color: #7c3aed;
+}
+p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Button style base (not Tailwind, fallback) */
+.btn {
+  display: inline-block;
+  background-color: #7c3aed;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #6b21a8;
+  transform: translateY(-2px);
+}
