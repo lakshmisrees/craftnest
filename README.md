@@ -1,58 +1,30 @@
-#🧵 CraftNest
+# 🧵 CraftNest
 
-A Cozy & Minimal Handmade Products Website
+CraftNest is a modern, responsive web application designed to showcase handmade and artistic products in a clean and cozy interface. The project focuses on aesthetic UI design, smooth navigation, and structured product presentation.
 
-##📌 Overview
+---
 
-CraftNest is a modern, responsive web application designed to showcase and promote handmade and artistic products in a clean, cozy, and user-friendly interface.
+## 🚀 Features
+- Responsive design (Mobile & Desktop)
+- Organized product display
+- Clean and minimal UI
+- Component-based architecture using React
 
-The platform focuses on aesthetic presentation, smooth navigation, and structured product display — making it ideal for small businesses and independent creators.
+---
 
-##🚀 Features
+## 🛠️ Tech Stack
+- React.js  
+- HTML5  
+- CSS3  
+- JavaScript  
+- Git & GitHub  
 
-🛍️ Beautiful product showcase layout
+---
 
-🔎 Organized product sections
+## 🎯 Purpose
+Built to strengthen frontend development skills, improve UI/UX design understanding, and create a portfolio-ready project.
 
-📱 Fully responsive design (Mobile + Desktop)
+---
 
-🎨 Minimal and cozy UI design
+**Author:** Lakshmi Sree
 
-⚡ Fast-loading static pages
-
-📸 Custom images and branding support
-
-📂 Structured component-based architecture
-
-##🛠️ Tech Stack
-
-Frontend
-
-HTML5
-
-CSS3
-
-JavaScript
-
-React.js
-
-Tools
-
-VS Code
-
-Git & GitHub
-
-##🧩 Project Structure
-CraftNest/
-│
-├── public/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── assets/
-│   └── App.js
-│
-└── package.json
-
-
-The project follows a clean and modular structure for scalability and maintainability.
